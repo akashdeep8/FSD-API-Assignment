@@ -1,0 +1,165 @@
+       <!DOCTYPE html>
+       <html>
+         <head>
+           <title>GoFood</title> 
+           <link rel="stylesheet" href="css/index.css">
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+           <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+           <!--bootstrap cdn-->
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
+        </head>
+         <body>
+            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+                <!-- index--> 
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/food.jpg" width="350px" height="85px">
+                </a>
+              
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="weather.html" id="navbardrop" target="_blank" >
+                         Check Weather
+                        </a>
+                       
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" id="navbardrop" target="_blank" >
+                         About Us
+                        </a>
+                       
+                      </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Use Coupon
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">WELCOME50</a>
+                      <a class="dropdown-item" href="#">FOOD40</a>
+                      <a class="dropdown-item" href="#">HDFC10</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Filter 
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">500-1000</a>
+                      <a class="dropdown-item" href="#">200-400</a>
+                      <a class="dropdown-item" href="#"> <200</a>
+                      
+                    </div>
+                  </li>
+              
+                  <!-- sign up -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="signup.html" id="navbardrop" target="_blank" >
+                      Sign up
+                    </a>
+                   
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="login.html" id="navbardrop" target="_blank">
+                        Log in
+                      </a>
+                    </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html" id="navbardrop" target="_blank">
+                        Contact Us
+                      </a>
+                     
+                    </li>
+                  <li>
+                  <form class="form-inline" action="/action_page.php">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-secondary" type="submit">Search</button>
+                </form>
+              </li>
+                </ul>
+              </nav>
+
+           <!--- ***********************************-->
+          <div class="jumbotron jumbotron-billboard text-center">
+            <div class="img"></div>
+            <div class="container pt">
+              <!-- <div class="text-center">
+                <img class="logo" src='http://image.ibb.co/g52Ayb/Go_Food_2.png' />
+              </div> -->
+              <div class="mt-5 text-color">
+                <h1>Find the best Restaurants</h1>
+              </div>
+              <div class="row mx-auto well col-lg-12 mt-5 form-group">
+                <div class="col-xs-4 pr-0">
+                  <select id="select_id" class="form-control form-control-lg">
+                    <option value="Select City" hidden>Select City</option>
+                    <option value="4">Bengaluru</option>
+                    <option value="3" >Mumbai</option>
+                    <option value="1">Delhi</option>
+                    <option value="6">Hyderabad</option>
+                    <option value="5">Pune</option>
+                    <option value="11333">Patiala</option>
+                  </select>
+                </div>
+                <div class="col-xs-6 pl-0 pr-0 form-group" id="search_id">
+                  <input id="getRestro" type="text" class="form-control" placeholder="Search for Restaurant"> <br>
+                  </div>
+                  
+                  <button id = "search" class = "btn btn-success btn-block col-xs-2">Search</button>
+               </div>
+              </div>
+            </div>
+             <div class="container">
+              <div>
+                <div class = "message  col-md-12"></div>
+              </div>
+            </div> 
+
+            <!-- <section class="contact" id="contact">
+                <div class="container">
+                    <div class="text-center py-5">
+                        <h2 class="py-3">Contact us</h2>
+                        <div class="mx-auto heading-line"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            Google Map 
+                            <div id="map-container google-1" class="z-depth-1-half map-container">
+                              <iframe src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></iframe>
+                            </div>
+                           Google Map
+                          </div>
+                          <form class="form-container">
+                              <div class="form-group">
+                                      <label for="exampleInputPassword1">Name</label>
+                                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="enter name">
+                                  </div>
+                      
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                              <label for="Message"></label>
+                               <textarea id="message" placeholder="Enter message" class="form-control" rows="5"></textarea>
+                              </div>
+                             
+                              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </form>
+            
+                      </div>
+            
+                    </div>
+                 
+      
+      
+              </section> -->
+     </body>
+          <!--optional script cdn-->
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="js/index.js"></script> 
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title> 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
+     <style>
+       .section{
+        background:url('images/weather.jpg') no-repeat;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.7;
+            background-size: cover;
+            position: relative;
+            
+       }
+       #text{
+           color:#000;
+       }
+       #text2{
+           color: cyan;
+       }
+    </style>
+   
+   </head>
+
+   <body>
+       <!--nav bar-->
+     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+         <!-- Brand--> 
+         <a class="navbar-brand" href="index.html">
+           <img src="images/food.jpg" width="350px" height="85px">
+         </a>
+       
+         <!-- Links -->
+         <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                 <a class="nav-link" href="weather.html" id="navbardrop">
+                  Check Weather
+                 </a>
+                
+               </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="about.html" id="navbardrop">
+                  About Us
+                 </a>
+                
+               </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Use Coupon
+             </a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">WELCOME50</a>
+               <a class="dropdown-item" href="#">FOOD40</a>
+               <a class="dropdown-item" href="#">HDFC10</a>
+             </div>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Filter 
+             </a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">500-1000</a>
+               <a class="dropdown-item" href="#">200-400</a>
+               <a class="dropdown-item" href="#"> <200</a>
+               
+             </div>
+           </li>
+       
+           <!--sign up-->
+           <li class="nav-item">
+             <a class="nav-link" href="signup.html" id="navbardrop" target="_blank" >
+               Sign up
+             </a>
+            
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="login.html" id="navbardrop" target="_blank">
+                 Log in
+               </a>
+             </li>
+           <!--contact-->
+           <li class="nav-item">
+               <a class="nav-link" href="contact.html" id="navbardrop" target="_blank">
+                 Contact Us
+               </a>
+              
+             </li>
+           <li>
+           <form class="form-inline" action="/action_page.php">
+           <input class="form-control mr-sm-2" type="text" placeholder="Search">
+           <button class="btn btn-secondary" type="submit">Search</button>
+         </form>
+       </li>
+       
+         </ul>
+       </nav>
+       <!--weather API-->
+       <section class="section">
+          <br> <br> <br> <br> <br> <br>  
+        
+   <center> <h1 id="text"><b>WEATHER AND CLIMATE INFORMATION</b></h1></center>
+   <center><h3 id="text2">Enter Your City Name: </h3><input type="text" id="value" width="80" height="80" placeholder="enter city.."></center><br> 
+   <center> <button onclick="weather()" class="button button3 btn btn-success">Get Your Details</button></center>
+    <div id="temp">  </div>
+    <div id="speed"></div>
+    <div id="humidity"></div> 
+    </section>
+    </body>
+    <!--Script file-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/weather.js"></script>
+</html>
+       

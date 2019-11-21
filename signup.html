@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Sign Up</title>
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
+      <!--internal style-->
+    <style> 
+.bg{
+            background:url('https://cdn.fstoppers.com/styles/full/s3/media/2017/09/11/autumn_food_photography_0.jpg') no-repeat;
+            width: 100%;
+            height: 100vh;
+            background-size: 100%;
+            position: relative;
+        }
+        .form-container{
+           margin-top:155px;
+           background-color: #f3b08394;
+            padding:30px;
+            border-radius: 10px;
+            box-shadow:0px 0px 10px 0px #000;
+        }
+        </style>
+    </head>
+    <body>
+      <!-- Nav bars-->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <!-- index -->
+            <a class="navbar-brand" href="index.html">
+              <img src="images/food.jpg" width="350px" height="85px" >
+            </a>
+          
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="weather.html" id="navbardrop">
+                     Check Weather
+                    </a>
+                   
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" id="navbardrop">
+                     About Us
+                    </a>
+                   
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Use Coupon
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">NEW50</a>
+                  <a class="dropdown-item" href="#">FOOD40</a>
+                  <a class="dropdown-item" href="#">HDFC10</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Filter 
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">500-1000</a>
+                  <a class="dropdown-item" href="#">200-400</a>
+                  <a class="dropdown-item" href="#"> <200</a>
+                  
+                </div>
+              </li>
+          
+              <!-- Sign up-->
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html" id="navbardrop" >
+                  Sign up
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="login.html" id="navbardrop" >
+                    Log in
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" id="navbardrop">
+                     Contact Us
+                    </a>
+                   
+                  </li>
+              <li>
+              <form class="form-inline" action="/action_page.php">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+          </li>
+            </ul>
+          </nav>
+          <!--Sign up page-->
+        <section class="container-fluid bg">
+            <section class="row justify-content-center">
+                <section class="col-12 col-sm-6 col-md-3">
+                        <form class="form-container">
+                                <div class="form-group">
+                                        <label for="exampleInputPassword1">First Name</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="first name">
+                                    </div>
+                                <div class="form-group">
+                                     <label for="exampleInputPassword1">Last Name</label>
+                                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="last name">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleInputPassword1">Contact Number</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="enter number">
+                                   </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                          </form>
+                </section>
+            </section>
+        </section>
+    <!-- Optional JavaScript -->
+  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+  
