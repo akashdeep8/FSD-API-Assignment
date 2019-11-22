@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("search").on("click", function() {
+  $("#search").onclick("click", function() {
    var valueSearchBox = $('#getRestro').val()
    if (valueSearchBox === "") {
     return 0;
@@ -18,7 +18,7 @@ $(document).ready(function() {
     "method": "GET",
     "headers": {
      "user-key": "00580b3953c06575b2b791025c9315fd",
-     'Content-Type': 'application/x-www-form-urlencoded'
+     
     }
    }
    $.getJSON(settings, function(data) {
