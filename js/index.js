@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("#search").onclick("click", function() {
+  $("#search").on("click", function() {
    var valueSearchBox = $('#getRestro').val()
    if (valueSearchBox === "") {
     return 0;
